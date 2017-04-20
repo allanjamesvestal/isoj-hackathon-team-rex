@@ -46,6 +46,18 @@ It's 20 miles to the school-bus depot and, as Estes drives, she flips on conserv
 
 { .embed }
 
+slug: panel
+
+id: myPanel
+
+heading: Test
+
+bodyText: Test test test
+
+{}
+
+{ .embed }
+
 slug: quotebox
 
 heading: How is this possible?

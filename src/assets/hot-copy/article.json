@@ -56,6 +56,15 @@
         {
             "type": "embed",
             "value": {
+                "slug": "panel",
+                "id": "myPanel",
+                "heading": "Test",
+                "bodyText": "Test test test"
+            }
+        },
+        {
+            "type": "embed",
+            "value": {
                 "slug": "quotebox",
                 "heading": "How is this possible?",
                 "bodyText": "Do you find our work too hard to believe? Are you not sure where we got these numbers?"
