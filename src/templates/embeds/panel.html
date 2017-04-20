@@ -1,5 +1,5 @@
 <div id="{{ embedContents.id }}" class="panel">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav({{ embedContents.id }})">&times;</a>
   <h2>{{ embedContents.heading }}</h2>
 
   <div class="text">
@@ -8,11 +8,11 @@
 </div>
 
 <script>
-function openNav() {
-  document.getElementById("{{ embedContents.id }}").style.display = "block";
+function openNav(id) {
+  document.getElementById(id).style.display = "block";
 }
 
-function closeNav() {
-  document.getElementById("{{ embedContents.id }}").style.display = "none";
+function closeNav(id) {
+  document.getElementById(id).style.display = "none";
 }
 </script>
