@@ -27,6 +27,15 @@ const meta = require('./meta.json');
 
 const appName = S(meta.name).slugify().s;
 
+const hotCopy = require('gulp-hotcopy');
+hotCopy.configure({
+  hotCopyDir: './src/assets/hot-copy/'
+});
+
+gulp.task('hcf', (cb) => {
+  hotCopy.watchHotCopyFiles(gulp, ['templates']);
+})
+
 
 gulp.task('img', (cb) => {
   runSequence('optimize-images', 'resize-images', 'plain-images', cb);
@@ -39,6 +48,7 @@ gulp.task('default', [
   'watchify',
   'templates',
   'server',
+  'hcf',
 ], () => {});
 
 
