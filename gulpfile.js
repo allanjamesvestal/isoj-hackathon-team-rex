@@ -12,7 +12,7 @@ const gulp = require('./gulp')([
   'assets',
   'aws',
   'aws-test',
-  'browserify',
+  // 'browserify',
   'clear-test',
   'plain-images',
   'optimize-images',
@@ -20,7 +20,7 @@ const gulp = require('./gulp')([
   'scss',
   'templates',
   'server',
-  'watchify',
+  // 'watchify',
 ]);
 const meta = require('./meta.json');
 
@@ -36,7 +36,7 @@ gulp.task('default', [
   'assets',
   'img',
   'scss',
-  'watchify',
+  // 'watchify',
   'templates',
   'server',
 ], () => {});

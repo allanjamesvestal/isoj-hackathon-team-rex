@@ -1,7 +1,18 @@
-import $ from 'jquery';
+// import $ from 'jquery';
+// import './furniture';
 
-import './furniture';
+// Copyright
+var d = new Date();
+var year = d.getFullYear();
 
-$(document).ready(() => {
-  console.log('Custom scripting goes here');
-});
+$('.copyright').text(year);
+
+
+// Open, close nav
+function openNav() {
+  document.getElementById("mySidenav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.display = "none";
+}

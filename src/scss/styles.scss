@@ -15,4 +15,77 @@
  /* Project-specific styles */
 /*                         */
 
+$highlight-text: #02C39A;
+$panel-background: #05668D;
+$panel-text: #F0F3BD;
+
+.panel {
+  display: none;
+  height: 100%;
+  width: 450px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $panel-background;
+  overflow-x: hidden;
+  padding-top: 60px;
+
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: $panel-text;
+    display: block;
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+}
+
+.panel a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+}
+
+.quote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+  margin-left: 15px;
+  margin-right: -150px;
+  width: 150px;
+  min-height: 250px;
+
+  p {
+    display: inline;
+  }
+}
+
+.quote:before {
+  width: 0; 
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right:10px solid blue;
+}
+
+@media screen and (max-height: 450px) {
+  .panel {
+    padding-top: 15px;
+
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
 // Enter your custom styles here.
