@@ -19,6 +19,7 @@
   background-color: #FFFFFF;
   box-shadow: inset -1px -1px 19px -5px #777, 1px 1px 10px #777;
   position: fixed;
+  top: 0;
   width: 100%;
 
   .logo {
@@ -29,6 +30,10 @@
   #subscribe {
     color: #323232;
   }
+}
+
+#content-header {
+  margin-top: 52px;
 }
 
 .more,
@@ -136,10 +141,13 @@ $grey: #CCC;
   margin-top: 15px;
   margin-left: -42px;
   position: absolute;
+<<<<<<< HEAD
 }
 
 .quote:hover {
   background-color: #EEE;
+=======
+>>>>>>> ee31c349813c4690223e8cb1e636e742c28197a4
 }
 
 @media screen and (max-height: 450px) {
