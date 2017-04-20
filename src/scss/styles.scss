@@ -19,6 +19,7 @@
   background-color: #FFFFFF;
   box-shadow: inset -1px -1px 19px -5px #777, 1px 1px 10px #777;
   position: fixed;
+  top: 0;
   width: 100%;
 
   .logo {
@@ -29,6 +30,10 @@
   #subscribe {
     color: #323232;
   }
+}
+
+#content-header {
+  margin-top: 52px;
 }
 
 .more,
@@ -119,19 +124,11 @@ $grey: #CCC;
 }
 
 .quote:before {
-<<<<<<< HEAD
   content: "🤔";
   font-size: 40px;
   margin-top: 7px;
   margin-left: -42px;
   position: absolute;
-=======
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right:10px solid blue;
->>>>>>> 6dc1de9b6660fb06ba1c10832d49d0ea8ed2826e
 }
 
 @media screen and (max-height: 450px) {
