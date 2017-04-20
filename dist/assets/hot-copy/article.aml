@@ -36,13 +36,19 @@ id: myPanel1
 
 heading: Idea for stories
 
-bodyText: We have three editorial meetings every day where we discuss potential story ideas. Many articles you read are explore how national issues play out in our community. Reporters search for people whose experiences reflect how federal policies impact citizens daily lives.
+bodyText: We have three editorial meetings every day where we discuss potential story ideas.
+
+Many articles you read are explore how national issues play out in our community. Reporters search for people whose experiences reflect how federal policies impact citizens daily lives.
+
+:end
 
 {}
 
 { .embed }
 
 slug: quotebox
+
+id: myPanel1
 
 heading: Where do these stories come from?
 
@@ -92,19 +98,19 @@ heading: Data collection
 
 bodyText: Pew Research Center has its origins in a research project created in 1990 by the Times Mirror newspaper company and called the Times Mirror Center for the People & the Press. The project conducted regular polls on politics and major policy issues. Their empirical research on a wide range of topics helps U.S. and international policymakers, civic leaders, educators and the public at large understand and address some of the world's most challenging problems.
 
-
-
 They do very good and free research. Sometimes we figure out stories to match to some of their surveys. Other times we just try to look for a survey to support our story. This story is a Case B situation.
 
+To learn more about them go to: [http://www.pewresearch.org](https://www.google.com/url?q=http://www.pewresearch.org&sa=D&ust=1492729587067000&usg=AFQjCNEPYHWAiRLfqskzUkuBamo_r8iGzw)
 
-
-To learn more about them go to: http://www.pewresearch.org
+:end
 
 {}
 
 { .embed }
 
 slug: quotebox
+
+id: myPanel2
 
 heading: Why are these statistics included?
 
@@ -146,6 +152,8 @@ bodyText: The reporter must try to be as close as it is possible on the characte
 
 slug: quotebox
 
+id: myPanel3
+
 heading: Did this scene really happen?
 
 bodyText: Do you ever wonder how reporters manage to capture personal moments?
@@ -176,7 +184,7 @@ slug: panel
 
 id: myPanel4
 
-heading: Making/Writing
+heading: Making and writing stories
 
 bodyText: We do need to create empathy with the readers. Describing the places they live, the pets they have is a way to put the reader in the character environment and a very common strategy in the writing process.
 
@@ -185,6 +193,8 @@ bodyText: We do need to create empathy with the readers. Describing the places t
 { .embed }
 
 slug: quotebox
+
+id: myPanel4
 
 heading: Why does this matter?
 
