@@ -1,6 +1,6 @@
 {
-    "headline": "For Trump loyalist and the neighbors she wants gone, immigration policy more than politics",
-    "deck": "Next line TK.",
+    "headline": "Fear, hope and deportations",
+    "deck": "On a Texas prairie, distance grows between neighbors over an American birthright",
     "desk": "Test",
     "section": "Test",
     "published-date": "April 20, 2017",
@@ -20,6 +20,23 @@
         {
             "type": "text",
             "value": "VALLEY VIEW -- Tamara Estes wakes up before the sun, getting ready for a job that reminds her of what infuriates her about America. She drives a school bus on a route that winds through a  neighborhood filled with undocumented Mexicans in this North Texas town about 70 miles northwest of Dallas. She picks up nearly 100 of their children and drops them off at public schools funded by American taxpayers. By her."
+        },
+        {
+            "type": "embed",
+            "value": {
+                "slug": "panel",
+                "id": "myPanel1",
+                "heading": "Idea for stories",
+                "bodyText": "We have three editorial meetings every day where we discuss potential story ideas. Many articles you read are explore how national issues play out in our community. Reporters search for people whose experiences reflect how federal policies impact citizens daily lives."
+            }
+        },
+        {
+            "type": "embed",
+            "value": {
+                "slug": "quotebox",
+                "heading": "Where do these stories come from?",
+                "bodyText": "Learn more about how we choose our story subjects."
+            }
         },
         {
             "type": "text",
@@ -54,23 +71,6 @@
             "value": "\"I wish we could go back to a time when we could live, not just exist, when everything wasn't a struggle,\" she says."
         },
         {
-            "type": "embed",
-            "value": {
-                "slug": "panel",
-                "id": "myPanel",
-                "heading": "Test",
-                "bodyText": "Test test test"
-            }
-        },
-        {
-            "type": "embed",
-            "value": {
-                "slug": "quotebox",
-                "heading": "How is this possible?",
-                "bodyText": "Do you find our work too hard to believe? Are you not sure where we got these numbers?"
-            }
-        },
-        {
             "type": "text",
             "value": "Estes is 59, divorced and earns $24,000 a year. With four days left to payday, she has $118.72 in her checking account."
         },
@@ -101,6 +101,23 @@
         {
             "type": "text",
             "value": "Over the past three decades, every other developed economy in the world except Canada has abandoned or restricted birthright citizenship amid rising flows of immigrants and refugees. But in America, it remains commonplace. In 2014, 7 percent of all U.S. births -- about 275,000 babies -- were to parents illegally in the United States, according to the nonpartisan Pew Research Center."
+        },
+        {
+            "type": "embed",
+            "value": {
+                "slug": "panel",
+                "id": "myPanel2",
+                "heading": "Data collection",
+                "bodyText": "Pew Research Center has its origins in a research project created in 1990 by the Times Mirror newspaper company and called the Times Mirror Center for the People & the Press. The project conducted regular polls on politics and major policy issues. Their empirical research on a wide range of topics helps U.S. and international policymakers, civic leaders, educators and the public at large understand and address some of the world's most challenging problems."
+            }
+        },
+        {
+            "type": "embed",
+            "value": {
+                "slug": "quotebox",
+                "heading": "Why are these statistics included?",
+                "bodyText": "Learn more about how numbers play a role in our reporting."
+            }
         },
         {
             "type": "text",
@@ -139,6 +156,23 @@
             "value": "\"Have a good day, y'all.\""
         },
         {
+            "type": "embed",
+            "value": {
+                "slug": "panel",
+                "id": "myPanel3",
+                "heading": "Interviewing process",
+                "bodyText": "The reporter must try to be as close as it is possible on the character way of life to write about it. In this case, the reporter stayed two days from 5 a.m. to 10 p.m. with Este. And two days with his neighbor to feel the atmosphere of both families. All the interviews were done during these four days. The idea is to have a lot of Q&A done, to grab the best sentences and idea from the characters."
+            }
+        },
+        {
+            "type": "embed",
+            "value": {
+                "slug": "quotebox",
+                "heading": "Did this scene really happen?",
+                "bodyText": "Do you ever wonder how reporters manage to capture personal moments?"
+            }
+        },
+        {
             "type": "text",
             "value": "Trump has argued that undocumented immigrants take jobs from American workers, depress wages and overburden government services. Studies have partially confirmed that view, at least in the short term."
         },
@@ -173,6 +207,23 @@
         {
             "type": "text",
             "value": "The daily routines are similar in these two small, prefabricated houses on a flat road paved into the  prairie. Both families raise chickens and dogs, work long days for little pay and pray for better at church on Sunday."
+        },
+        {
+            "type": "embed",
+            "value": {
+                "slug": "panel",
+                "id": "myPanel4",
+                "heading": "Making/Writing",
+                "bodyText": "We do need to create empathy with the readers. Describing the places they live, the pets they have is a way to put the reader in the character environment and a very common strategy in the writing process."
+            }
+        },
+        {
+            "type": "embed",
+            "value": {
+                "slug": "quotebox",
+                "heading": "Why does this matter?",
+                "bodyText": "Storytelling is at the core of what we do."
+            }
         },
         {
             "type": "text",
