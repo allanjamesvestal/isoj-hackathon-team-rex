@@ -61,8 +61,8 @@ $grey: #CCC;
   padding: 20px 40px;
   padding-top: 60px;
 
-  .search {
-    margin-right: 10px;
+  h2:before {
+    content: "🔍 \00a0 ";
   }
   
   .text {
@@ -129,10 +129,6 @@ $grey: #CCC;
   .subheader {
     font-size: 15px;
   }
-
-  // svg {
-  //   transform: scale(0.25);
-  // }
 }
 
 .quote:before {
@@ -141,13 +137,14 @@ $grey: #CCC;
   margin-top: 15px;
   margin-left: -42px;
   position: absolute;
-<<<<<<< HEAD
+}
+
+.subheader:before {
+  content: "🔍 \00a0 ";
 }
 
 .quote:hover {
   background-color: #EEE;
-=======
->>>>>>> ee31c349813c4690223e8cb1e636e742c28197a4
 }
 
 @media screen and (max-height: 450px) {
