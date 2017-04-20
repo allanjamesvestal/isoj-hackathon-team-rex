@@ -101,7 +101,6 @@ $grey: #CCC;
   margin-left: 45px;
   margin-right: -175px;
   width: 175px;
-  min-height: 250px;
 
   .text {
     padding: 0.5em 10px;
@@ -116,8 +115,9 @@ $grey: #CCC;
     color: #FFF;
     display: block;
     text-align: center;
-    padding: 5px 0;
+    padding: 0.5em 0;
     font-size: 20px;
+    line-height: 24px;
   }
 
   .search {
