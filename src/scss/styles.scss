@@ -15,6 +15,28 @@
  /* Project-specific styles */
 /*                         */
 
+.bg-black {
+  background-color: #FFFFFF;
+  box-shadow: inset -1px -1px 19px -5px #777, 1px 1px 10px #777;
+  position: fixed;
+  width: 100%;
+
+  .logo {
+    background-image: url('//www.isoj.org/wp-content/uploads/2016/09/isoj-logo@2x.png');
+    width: 92px;
+  }
+
+  #subscribe {
+    color: #323232;
+  }
+}
+
+.more,
+.interactive-footer {
+  display: none;
+}
+
+
 $highlight-text: #02C39A;
 $panel-background: #05668D;
 $panel-text: #F0F3BD;
@@ -97,11 +119,19 @@ $grey: #CCC;
 }
 
 .quote:before {
+<<<<<<< HEAD
   content: "🤔";
   font-size: 40px;
   margin-top: 7px;
   margin-left: -42px;
   position: absolute;
+=======
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right:10px solid blue;
+>>>>>>> 6dc1de9b6660fb06ba1c10832d49d0ea8ed2826e
 }
 
 @media screen and (max-height: 450px) {
