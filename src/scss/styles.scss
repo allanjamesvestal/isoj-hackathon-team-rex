@@ -47,12 +47,24 @@ $grey: #CCC;
   height: 100%;
   width: 450px;
   position: fixed;
-  z-index: 1;
+  z-index: 30;
   top: 0;
   left: 0;
   background-color: $panel-background;
   overflow-x: hidden;
+  color: #FFF;
+  padding: 20px 40px;
   padding-top: 60px;
+
+  .search {
+    margin-right: 10px;
+  }
+  
+  .text {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 24px;
+  }
 
   a {
     padding: 8px 8px 8px 32px;
@@ -82,8 +94,8 @@ $grey: #CCC;
   cursor: pointer;
   float: right;
   margin-left: 45px;
-  margin-right: -150px;
-  width: 150px;
+  margin-right: -175px;
+  width: 175px;
   min-height: 250px;
 
   .text {
@@ -119,19 +131,15 @@ $grey: #CCC;
 }
 
 .quote:before {
-<<<<<<< HEAD
   content: "🤔";
   font-size: 40px;
-  margin-top: 7px;
+  margin-top: 15px;
   margin-left: -42px;
   position: absolute;
-=======
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right:10px solid blue;
->>>>>>> 6dc1de9b6660fb06ba1c10832d49d0ea8ed2826e
+}
+
+.quote:hover {
+  background-color: #EEE;
 }
 
 @media screen and (max-height: 450px) {

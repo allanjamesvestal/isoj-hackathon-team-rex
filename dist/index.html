@@ -218,7 +218,46 @@ googletag.enableServices();
     
         
     
-    <p><span class="quote" onclick="openNav()"><span class="header">How is this possible?</span><span class="text">Do you find our work too hard to believe? Are you not sure where we got these numbers?<br /><br />Tell me more!</span><br /><span class="search">:mag:</span><span class="subheader">Check our answer</span></span></p>
+    <div id="myPanel" class="panel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <h2>
+    <span class="search">🔍</span>Test
+  </h2>
+
+  <div class="text">
+    <p>Test test test</p>
+  </div>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("myPanel").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("myPanel").style.display = "none";
+}
+</script>
+
+
+    
+        
+    
+    <p>
+  <span class="quote" onclick="openNav()">
+    <span class="header">How is this possible?</span>
+    <span class="text">
+      Do you find our work too hard to believe? Are you not sure where we got these numbers?
+      <br />
+      <br />
+      Tell me more!
+      <br />
+    </span>
+    
+    <span class="search">🔍</span>
+    <span class="subheader">Check our answer</span>
+  </span>
+</p>
 
 
 
