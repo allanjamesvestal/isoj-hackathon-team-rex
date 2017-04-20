@@ -33,7 +33,7 @@ hotCopy.configure({
 });
 
 gulp.task('hcf', (cb) => {
-  hotCopy.watchHotCopyFiles(gulp, ['templates', 'js']);
+  hotCopy.watchHotCopyFiles(gulp, ['templates']);
 })
 
 
