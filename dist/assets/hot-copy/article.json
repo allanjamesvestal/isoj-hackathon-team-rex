@@ -34,12 +34,6 @@
             "value": "The eldest, Rainier Corral, 15, emerges from his bedroom carrying a book bag and a trumpet case. He's a 188-pound rock of a kid who plays lineman on the high school football team, a top-notch student who wants to study mechanical engineering at Texas A&M."
         },
         {
-            "type": "ad",
-            "value": {
-                "placementNumber": "1"
-            }
-        },
-        {
             "type": "text",
             "value": "Rainier's family has always believed in the promise of America, where they saved enough to buy their own home and their kids go to good schools. But now that Trump is threatening to deport millions -- and even change the law that gave their children U.S. citizenship -- they are filled with fear."
         },
@@ -58,6 +52,14 @@
         {
             "type": "text",
             "value": "\"I wish we could go back to a time when we could live, not just exist, when everything wasn't a struggle,\" she says."
+        },
+        {
+            "type": "embed",
+            "value": {
+                "slug": "quotebox",
+                "heading": "How is this possible?",
+                "bodyText": "Do you find our work too hard to believe? Are you not sure where we got these numbers?"
+            }
         },
         {
             "type": "text",
