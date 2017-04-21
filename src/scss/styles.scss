@@ -23,7 +23,7 @@
   width: 100%;
 
   .logo {
-    background-image: url('//www.isoj.org/wp-content/uploads/2016/09/isoj-logo@2x.png');
+    background-image: url('../images/_isoj-logo.png');
     width: 92px;
   }
 
@@ -64,7 +64,7 @@ $grey: #CCC;
   h2:before {
     content: "🔍 \00a0 ";
   }
-  
+
   .text {
     margin-top: 30px;
     font-size: 18px;
