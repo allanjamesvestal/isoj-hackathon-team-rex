@@ -21,9 +21,9 @@
     "dallas morning news",
     "dallas morning news newspaper"
   ],
-  "imgURL": "http://interactives.dallasnews.com/2017/isoj/undefined",
-  "imgWidth": "<Width - w/out \"px\">",
-  "imgHeight": "<Height - w/out \"px\">",
-  "sectionTwitter": "<handle - w/out \"@\">",
-  "authorTwitter": "<handle - w/out \"@\">"
+  "imgURL": "http://interactives.dallasnews.com/2017/isoj/share.jpg",
+  "imgWidth": "1200",
+  "imgHeight": "630",
+  "sectionTwitter": "ISOJ2017",
+  "authorTwitter": "allanjvestal"
 }

@@ -52,7 +52,7 @@ gulp.task('default', [
 ], () => {});
 
 
-gulp.task('build', ['assets', 'img', 'scss', 'templates', 'browserify']);
+gulp.task('build', ['assets', 'img', 'scss', 'templates']);
 
 
 gulp.task('publish', (cb) => { runSequence('build', 'aws', 'clear-test', cb); });

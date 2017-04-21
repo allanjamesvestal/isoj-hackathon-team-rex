@@ -1,237 +1,216 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-<head prefix='og: http://ogp.me/ns#'>
+    <head prefix='og: http://ogp.me/ns#'>
+        <!-- Add Custom Meta Data -->
+        {% block custom_meta %}
+        {% endblock %}
+        <!-- End Custom Meta Data -->
 
-	<!-- Add Custom Meta Data -->
-	{%block custom_meta%}
+        <meta property="fb:app_id" content="258290334265148"/>
+        <meta property="fb:page_id" content="20946638799"/>
+        <meta property="fb:admins" content="1043783589"/>
 
-	{%endblock%}
-	<!-- End Custom Meta Data -->
+        <link rel="shortcut icon" type="image/x-icon" href="//interactives.dallasnews.com/common/templates/v1.0/images/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="//interactives.dallasnews.com/common/templates/v1.1/css/share.css"/>
+        <link rel="stylesheet" type="text/css" href="//interactives.dallasnews.com/common/templates/v1.0/css/print.css" media="print"/>
+        <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6922714/7642152/css/fonts.css" />
+        <link href='//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
-	<meta property="fb:app_id" content="258290334265148"/>
-	<meta property="fb:page_id" content="20946638799"/>
-	<meta property="fb:admins" content="1043783589"/>
+        <link rel="stylesheet" type="text/css" href="css/styles-bundle.css" />
 
-	<link rel="shortcut icon" type="image/x-icon" href="//interactives.dallasnews.com/common/templates/v1.0/images/favicon.ico"/>
-	<link rel="stylesheet" type="text/css" href="//interactives.dallasnews.com/common/templates/v1.1/css/share.css"/>
-	<link rel="stylesheet" type="text/css" href="//interactives.dallasnews.com/common/templates/v1.0/css/print.css" media="print"/>
-	<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6922714/7642152/css/fonts.css" />
-	<link href='//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <script src="//code.jquery.com/jquery-2.2.3.min.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="css/dependency-bundle.css" />
-	<link rel="stylesheet" type="text/css" href="css/styles-bundle.css" />
+        <!--
+        <script type="text/javascript">
+            document.writeln('<sc' + 'ript type="text/javascript" src="https://sres.dallasnews.com/reg/js/tp_jsinclude.js' + '"></sc' + 'ript>');
+        </script>
+        -->
 
-	<script src="//code.jquery.com/jquery-2.2.3.min.js"></script>
+        {% block custom_head %}
+        {% endblock %}
 
-<!--
-	<script type="text/javascript">
-   		document.writeln('<sc' + 'ript type="text/javascript" src="https://sres.dallasnews.com/reg/js/tp_jsinclude.js' + '"></sc' + 'ript>');
-	</script>
--->
+        <!--
+        ================================
+        START AD CODE
+        ================================
+        -->
+        {% block ad %}
+        {% endblock %}
+        <!--
+        ================================
+        END AD CODE
+        ================================
+        -->
+    </head>
+    <body>
+        <!-- Google Tag Manager DMN -->
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T45ZQL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- <script type="text/javascript" src="//interactives.dallasnews.com/common/templates/v1.0/js/analytics.js"></script>-->
+        <!-- end Google Tag Manager DMN -->
+        <!-- <script type="text/javascript" src="https://sres.dallasnews.com/resources/cobrand/js/blogs/parselyDynamicTracking.js"></script>-->
 
+        <header class="bg-black clearfix">
+            <a class="logo" href="https://www.dallasnews.com" id="top">
+                <span class="sr-only">International Symposium on Online Journalism</span>
+            </a>
+            <div id="header-nav"></div>
+            <a id="subscribe" href="#">More information</a>
+        </header>
 
-	{%block custom_head%}
-	{%endblock%}
+        <article id="content">
+            {% block content %}
 
+            <section id="content-header">
+                <img src="images/_defaultImage.jpg" alt="FILL THIS IN">
+                <p class="cutline">Cutline goes here. You can remove this tag if you don't feel the lead image needs a cutline</p>
+            </section>
+            <!-- end contentHeader -->
 
+            <section class="content-well clearfix">
+                <header id="story-head">
+                    <h3>Label, if needed</h3>
+                    <h1>Main Headline</h1>
+                    <h2>Deck head goes in this spot here</h2>
+                </header>
+                <!-- end storyHead -->
 
-	<!--
-	================================
-	START AD CODE
-	================================
-	-->
-	{%block ad%}
+                <div class="byline-block">
+                    <p>By <a target="_blank" href="mailto:emailaddresshere">Writer Name</a> | Staff Writer</p>
+                    <p>Published Month Date, Year</p>
+                    <!-- <p>Updated Month, Date, Year</p> -->
+                </div>
+                <!-- end bylineBlock -->
 
-	{%endblock%}
-	<!--
-	================================
-	END AD CODE
-	================================
-	-->
+                <div class="shareComments shareCommentsTop">
+                    <ul id="share-bar1" class="width-auto-hack"></ul>
+                </div>
+                <!-- end shareComments -->
 
-</head>
-<body>
+                <p class="intro"><span class="dropcap">A</span>n opening paragraph goes here. I love the Weather & Opera section plagiarism Julian Assange syndicated process vs. product curmudgeon, attracting young readers cognitive surplus the audience knows more than I do discuss anonymity WikiLeaks hyperhyperlocal Arianna future scoop, Twitter topples dictators the medium is the message information overload natural-born blogger metered model Colbert bump Julian Assange CTR.</p>
 
-	<!-- Google Tag Manager DMN -->
-	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T45ZQL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!--	<script type="text/javascript" src="//interactives.dallasnews.com/common/templates/v1.0/js/analytics.js"></script>-->
-	<!-- end Google Tag Manager DMN -->
-<!--	<script type="text/javascript" src="https://sres.dallasnews.com/resources/cobrand/js/blogs/parselyDynamicTracking.js"></script>-->
+                <p>column-inch trolls copyboy data visualization AOL afternoon paper shoot a photo attracting young readers, MinnPost but what's the business model Instagram fair use fourth estate morgue writing, The Work of Art in the Age of Mechanical Reproduction audience atomization overcome free as in beer Pictures of Goats section kitchen table of the future masthead.</p>
 
-	<header class="bg-black clearfix">
-		<a class="logo" href="https://www.dallasnews.com" id="top"><span class="sr-only">The Dallas Morning News</span></a>
+                {% include "adblock1.html" %}
 
-		<div id="header-nav"></div>
+                <!--
+                use the above include with adblock2.html and adblock3.html to place adblocks 2 and 3, then delete this comment.
+                it won't self-destruct, but it is cleaner
+                -->
 
-		<a id="subscribe" href="https://join.dallasnews.com/subscribe?_referrer=interactives">Subscribe now</a>
-	</header>
+                <p>horse-race coverage copyboy the power of the press belongs to the person who owns one data visualization tweet Jeff Jarvis Patch Like button explainer, TechCrunch should isn't a business model copyright Romenesko WordPress Arianna Kindle Single Pictures of Goats section got drudged, gamification put the paper to bed the other longer Book Review The Work of Art in the Age of Mechanical Reproduction open newsroom Foursquare A.J. Liebling.</p>
 
-	<article id="content">
+                <p>Instagram Quora linkbait people formerly known as the audience bringing a tote bag to a knife fight YouTube RT syndicated the power of the press belongs to the person who owns one, Alberto Ibarguen The Work of Art in the Age of Mechanical Reproduction open newsroom The Weekender the medium is the message Dan Fleckner analog thinking future of context Instagram, David Foster Wallace reporting gutter Aron Pilhofer serendipity This Week in Review he said she said.</p>
 
-	{%block content%}
-
-		<section id="content-header">
-			<img src="images/_defaultImage.jpg" alt="FILL THIS IN">
-			<p class="cutline">Cutline goes here. You can remove this tag if you don't feel the lead image needs a cutline</p>
-		</section>
-		<!-- end contentHeader -->
-
-		<section class="content-well clearfix">
-
-			<header id="story-head">
-				<h3>Label, if needed</h3>
-				<h1>Main Headline</h1>
-				<h2>Deck head goes in this spot here</h2>
-			</header>
-				<!-- end storyHead -->
-
-				<div class="byline-block">
-		    		<p>By <a target="_blank" href="mailto:emailaddresshere">Writer Name</a> | Staff Writer</p>
-		    		<p>Published Month Date, Year</p>
-					<!-- <p>Updated Month, Date, Year</p> -->
-	   			</div>
-	    		<!-- end bylineBlock -->
-
-      		<div class="shareComments shareCommentsTop">
-				<ul id="share-bar1" class="width-auto-hack"></ul>
-			</div>
-			<!-- end shareComments -->
-
-			<p class="intro"><span class="dropcap">A</span>n opening paragraph goes here. I love the Weather & Opera section plagiarism Julian Assange syndicated process vs. product curmudgeon, attracting young readers cognitive surplus the audience knows more than I do discuss anonymity WikiLeaks hyperhyperlocal Arianna future scoop, Twitter topples dictators the medium is the message information overload natural-born blogger metered model Colbert bump Julian Assange CTR.</p>
-
-		    <p>column-inch trolls copyboy data visualization AOL afternoon paper shoot a photo attracting young readers, MinnPost but what's the business model Instagram fair use fourth estate morgue writing, The Work of Art in the Age of Mechanical Reproduction audience atomization overcome free as in beer Pictures of Goats section kitchen table of the future masthead.</p>
-
-		    {%include "adblock1.html" %}
-
-		    <!--
-		      use the above include with adblock2.html and adblock3.html to place adblocks 2 and 3, then delete this comment.
-		      it won't self-destruct, but it is cleaner
-		    -->
-
-		    <p>horse-race coverage copyboy the power of the press belongs to the person who owns one data visualization tweet Jeff Jarvis Patch Like button explainer, TechCrunch should isn't a business model copyright Romenesko WordPress Arianna Kindle Single Pictures of Goats section got drudged, gamification put the paper to bed the other longer Book Review The Work of Art in the Age of Mechanical Reproduction open newsroom Foursquare A.J. Liebling.</p>
-
-		    <p>Instagram Quora linkbait people formerly known as the audience bringing a tote bag to a knife fight YouTube RT syndicated the power of the press belongs to the person who owns one, Alberto Ibarguen The Work of Art in the Age of Mechanical Reproduction open newsroom The Weekender the medium is the message Dan Fleckner analog thinking future of context Instagram, David Foster Wallace reporting gutter Aron Pilhofer serendipity This Week in Review he said she said.</p>
-
-		    <p class="twitter-tag">Follow writer name on Twitter at <a href="urlhere">@twittertag.</a></p>
+                <p class="twitter-tag">Follow writer name on Twitter at <a href="urlhere">@twittertag.</a></p>
 
 
-			<section class="credits clearfix">
-				<p>Author: <a href="mailto:emailaddress">Name</a></p>
-				<p>Editor: <a href="mailto:emailaddress">Name</a></p>
-				<p>Copy Editor: <a href="mailto:emailaddress">Name</a></p>
-				<p>Photos: <a href="mailto:emailaddress">Name</a></p>
-				<p>Graphics: <a href="mailto:emailaddress">Name</a></p>
-				<p>Designer: <a href="mailto:emailaddress">Name</a></p>
-			</section>
-			<!-- end credits -->
+                <section class="credits clearfix">
+                    <p>Author: <a href="mailto:emailaddress">Name</a></p>
+                    <p>Editor: <a href="mailto:emailaddress">Name</a></p>
+                    <p>Copy Editor: <a href="mailto:emailaddress">Name</a></p>
+                    <p>Photos: <a href="mailto:emailaddress">Name</a></p>
+                    <p>Graphics: <a href="mailto:emailaddress">Name</a></p>
+                    <p>Designer: <a href="mailto:emailaddress">Name</a></p>
+                </section>
+                <!-- end credits -->
 
-			<section class="more clearfix">
-				<h5>More from The Dallas Morning News</h5>
-				<a class="clearfix" href="#">
-					<img src="images/_defaultImage.jpg" alt="Fill this in">
-					<h6>Story title goes here</h6>
-					<p>Description of the story goes in this spot here</p>
-				</a>
-				<a class="clearfix" href="#">
-					<img src="images/_defaultImage.jpg" alt="Fill this in">
-					<h6>Story title goes here</h6>
-					<p>Description of the story goes in this spot here</p>
-				</a>
-				<a class="clearfix" href="#">
-					<img src="images/_defaultImage.jpg" alt="Fill this in">
-					<h6>Story title goes here</h6>
-					<p>Description of the story goes in this spot here</p>
-				</a>
-			</section>
-			<!-- end more -->
+                <div class="shareComments">
+                    <ul id="share-bar2" class="width-auto-hack"></ul>
+                    <div id="comments"></div>
+                </div>
+                <!-- end shareComments -->
 
-      		<div class="shareComments">
-				<ul id="share-bar2" class="width-auto-hack"></ul>
-                <div id="comments"></div>
-			</div>
-			<!-- end shareComments -->
+            </section>
+            <!-- end contentWell -->
 
-		</section>
-		<!-- end contentWell -->
+            {% endblock %}
+        </article>
 
-	{%endblock%}
+        <footer id="colophon" class="site-footer" role="contentinfo">
+            <li id="text-4" class="widget widget_text ">
+                <div class="textwidget">
+                    <ul class="footer-logos">
+                        <li style="width:300px;">
+                            <img src="http://www.isoj.org/wp-content/uploads/2017/01/LOGO-KC-white.png">
+                        </li>
+                        <li style="width:160px;">
+                            <img src="http://www.isoj.org/wp-content/uploads/2017/01/logo-utexas.png">
+                        </li>
+                        <li style="width:280px;">
+                            <img src="http://www.isoj.org/wp-content/uploads/2017/01/logo-moody_college.png">
+                        </li>
+                        <li style="width:200px;">
+                            <img src="http://www.isoj.org/wp-content/uploads/2017/01/logo-journalism.png">
+                        </li>
+                    </ul>
 
-	</article>
+                    <div class="footer-social footer-section">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/isoj.utexas/" target="_blank">
+                                    <img src="http://www.isoj.org/wp-content/themes/isoj/img/social-facebook-white.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/ISOJ2017" target="_blank">
+                                    <img src="http://www.isoj.org/wp-content/themes/isoj/img/social-twitter-white.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.flickr.com/photos/utknightcenter/collections/72157677466163622/" target="_blank">
+                                    <img src="http://www.isoj.org/wp-content/themes/isoj/img/social-flickr-white.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UC2rifYX0vaES1ZZMVHn3CJQ" target="_blank">
+                                    <img src="http://www.isoj.org/wp-content/themes/isoj/img/social-youtube-white.svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <nav id="footer-navigation" class="secondary-navigation footer-section" role="navigation">
+                <div class="menu-footer-menu-container">
+                    <ul id="secondary-menu" class="menu">
+                        <li id="menu-item-1956" class="menu-item menu-item-type-post_type menu-item-object-symposium menu-item-1956"><a href="https://www.isoj.org/symposia/2017/">2017</a></li>
+                        <li id="menu-item-1957" class="menu-item menu-item-type-post_type menu-item-object-symposium menu-item-1957"><a href="https://www.isoj.org/symposia/2016/">2016</a></li>
+                        <li id="menu-item-1954" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1954"><a href="https://www.isoj.org/symposia/">All Symposia</a></li>
+                        <li id="menu-item-1955" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1955"><a href="https://www.isoj.org/news/">News</a></li>
+                        <li id="menu-item-1952" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1952"><a href="https://www.isoj.org/research/">Research</a></li>
+                        <li id="menu-item-1953" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1953"><a href="https://www.isoj.org/about/">About</a></li>
+                    </ul>
+                </div>
+            </nav>
 
-	<footer class="interactive-footer">
-		<div class="footer-content clearfix">
-			<img src="//interactives.dallasnews.com/common/templates/v1.0/images/_dn_logo_black.svg" alt="dallasnews logo"/>
-			<ul class="footer-social">
-				<li><a id="footer-facebook" href="https://www.facebook.com/dallasmorningnews" class="footer-social"></a></li>
-				<li><a id="footer-twitter" href="https://twitter.com/dallasnews" class="footer-social"></a></li>
-				<li><a id="footer-instagram" href="https://instagram.com/dallasnews" class="footer-social"></a></li>
-				<li><a id="footer-youtube" href="https://www.youtube.com/user/tdmnvid" class="footer-social"></a></li>
-			</ul>
+            <div class="site-info footer-section">
+                <p class="copyright">© 2017 Knight Center for Journalism in the Americas &nbsp;|&nbsp; All rights reserved</p>
+                <p class="copyright footer-credit">Website by <em><a href="https://dallasnews.com/" target="_blank">The Dallas Morning News</a></em></p>
+            </div>
+        </footer>
 
-			<div class="footer-links clearfix">
-				<ul>
-					<li><a href="http://dmnmedia.com/about-us/company-info/">About Us</a></li>
-					<li><a href="https://ahbelo.mua.hrdepartment.com/hr/ats/JobSearch/index">Careers</a></li>
-					<li><a href="http://dmnmedia.com/">Advertise</a></li>
-					<li><a href="https://www.dallasnews.com/contact-us">Contact Us</a></li>
-					<li><a href="https://www.dallasnews.com/digital-sub/faq">FAQ</a></li>
-					<li><a href="https://www.dallasnews.com/privacy-policy">Privacy Policy</a></li>
-					<li><a href="https://www.dallasnews.com/terms">Terms of Service</a></li>
-					<li><a href="https://www.dallasnews.com/site-map">Site Map</a></li>
-				</ul>
+        <script type="text/javascript" src="js/scripts-bundle.js"></script>
 
-				<p>©<span class="copyright"></span>, The Dallas Morning News Inc. All Rights Reserved.</p>
-			</div>
-		</div>
-	</footer>
+        {% block custom_foot %}
+        {% endblock %}
 
-<!--  	<script src="js/dependency-bundle.js"></script>-->
-	<script type="text/javascript" src="js/scripts-bundle.js"></script>
+        {% block custom_social_meta %}
+            <script type="text/javascript">
+                var storyTitle = "{{tweetText}}",
+                storyURL = "{{url}}",
+                leadText = "{{shareText}}",
+                storyIMG = "{{imgURL}}",
+                storyAuthor = "{{authors}}",
+                twitterTag = "{{sectionTwitter}}",
+                comments = true,
+                share = true;
+                OAS_sitepage = 'www.dallasnews.com/{{desk}}/{{section}}/';
+            </script>
+        {% endblock %}
 
-	{%block custom_foot%}
-	{%endblock%}
-
-
-
-	{%block custom_social_meta%}
-	<script type="text/javascript">
-	var storyTitle = "{{tweetText}}",
-		storyURL = "{{url}}",
-		leadText = "{{shareText}}",
-		storyIMG = "{{imgURL}}",
-		storyAuthor = "{{authors}}",
-		twitterTag = "{{sectionTwitter}}",
-		comments = true,
-		share = true;
-		OAS_sitepage = 'www.dallasnews.com/{{desk}}/{{section}}/';
-	</script>
-	{%endblock%}
-
-<!--
-	<script type="text/javascript" src="//interactives.dallasnews.com/common/templates/v1.1/js/commonInteractives.js"></script>
-	<script type="text/javascript" src="https://sres.dallasnews.com/resrsc/js/biomniture.js"></script>
--->
-	<script type="text/javascript" src="//interactives.dallasnews.com/common/templates/v1.0/js/actionsInteractives.js"></script>
-
-	<!-- START Parse.ly Include: Standard -->
-	<div id="parsely-root" style="display: none">
-		<div id="parsely-cfg" data-parsely-site="dallasnews.com"></div>
-	</div>
-<!--
-	<script>
-		(function(s, p, d) {
-		var h=d.location.protocol, i=p+"-"+s,
-		e=d.getElementById(i), r=d.getElementById(p+"-root"),
-		u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
-		:"static."+p+".com";
-		if (e) return;
-		e = d.createElement(s); e.id = i; e.async = true;
-		e.src = h+"//"+u+"/p.js"; r.appendChild(e);
-		})("script", "parsely", document);
-	</script>
--->
-	<!-- END Parse.ly Include: Standard -->
-
-
-</body>
+        <!-- <script type="text/javascript" src="//interactives.dallasnews.com/common/templates/v1.1/js/commonInteractives.js"></script> -->
+        <!-- <script type="text/javascript" src="https://sres.dallasnews.com/resrsc/js/biomniture.js"></script> -->
+        <!-- <script type="text/javascript" src="//interactives.dallasnews.com/common/templates/v1.0/js/actionsInteractives.js"></script> -->
+    </body>
 </html>
