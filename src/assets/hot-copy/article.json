@@ -16,6 +16,13 @@
             "email": "csessig86@gmail.com"
         }
     ],
+    "modalTitle": "About this page",
+    "modalBody": [
+        "This is a demonstration page created by a team at the Hackastory hackathon at ISOJ 2017. The page primarily demonstrates the team's concept for increasing transparency in the news reporting process. All text used on this page is intended solely for the purposes of demonstrating this concept.",
+        "This concept was voted to have the \"Best potential\" by the members of all the teams that participated in this hackathon.",
+        "More information on this project may be added here in the coming days. Otherwise, reach out to the team members who created it -- our names and email addresses are listed at the very bottom of the page.",
+        "_Last updated by Allan James Vestal on April 21, 2017._"
+    ],
     "body": [
         {
             "type": "text",
@@ -109,7 +116,7 @@
                 "slug": "panel",
                 "id": "myPanel2",
                 "heading": "Data collection",
-                "bodyText": "Pew Research Center has its origins in a research project created in 1990 by the Times Mirror newspaper company and called the Times Mirror Center for the People & the Press. The project conducted regular polls on politics and major policy issues. Their empirical research on a wide range of topics helps U.S. and international policymakers, civic leaders, educators and the public at large understand and address some of the world's most challenging problems.\n\nThey do very good and free research. Sometimes we figure out stories to match to some of their surveys. Other times we just try to look for a survey to support our story. This story is a Case B situation.\n\nTo learn more about them go to: [http://www.pewresearch.org](https://www.google.com/url?q=http://www.pewresearch.org&sa=D&ust=1492729587067000&usg=AFQjCNEPYHWAiRLfqskzUkuBamo_r8iGzw)"
+                "bodyText": "Pew Research Center has its origins in a research project created in 1990 by the Times Mirror newspaper company and called the Times Mirror Center for the People & the Press. The project conducted regular polls on politics and major policy issues. Their empirical research on a wide range of topics helps U.S. and international policymakers, civic leaders, educators and the public at large understand and address some of the world's most challenging problems.\n\nThey do very good and free research. Sometimes we figure out stories to match to some of their surveys. Other times we just try to look for a survey to support our story. This story is a Case B situation.\n\nTo learn more about them go to: [http://www.pewresearch.org](https://www.google.com/url?q=http://www.pewresearch.org&sa=D&ust=1492823901541000&usg=AFQjCNGSL1Sg21Xc2CAOXb3gh9sY89yIZA)"
             }
         },
         {
