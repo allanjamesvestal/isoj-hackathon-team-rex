@@ -55,12 +55,18 @@ $grey: #CCC;
     line-height: 24px;
   }
 
-  a {
+  .closebtn {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: $panel-text;
     display: block;
+    font-weight: bold;
+
+    &:hover {
+      color: #f1f1f1;
+      cursor: pointer;
+    }
   }
 
   .closebtn {
@@ -72,7 +78,8 @@ $grey: #CCC;
   }
 }
 
-.panel a:hover, .offcanvas a:focus{
+.offcanvas a:focus,
+.offcanvas .closebtn:focus {
   color: #f1f1f1;
 }
 
