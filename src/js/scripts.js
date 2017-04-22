@@ -3,7 +3,7 @@ import $ from 'jquery';
 
 // import './furniture';
 import bindNavigationEvents from './navigation';
-import './quote-boxes';
+import bindPanelEvents from './panels-and-quote-boxes';
 
 
 $(document).ready(() => {
@@ -14,4 +14,7 @@ $(document).ready(() => {
 
   // Navigation click event binding.
   bindNavigationEvents();
+
+  // Panel & quote box click event binding.
+  bindPanelEvents();
 });
