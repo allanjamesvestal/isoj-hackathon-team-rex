@@ -3,6 +3,7 @@ import $ from 'jquery';
 
 // import './furniture';
 import bindNavigationEvents from './navigation';
+import './quote-boxes';
 
 
 $(document).ready(() => {
