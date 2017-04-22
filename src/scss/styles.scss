@@ -15,29 +15,13 @@
  /* Project-specific styles */
 /*                         */
 
-.bg-black {
-  background-color: #FFFFFF;
-  box-shadow: inset -1px -1px 19px -5px #777, 1px 1px 10px #777;
-  position: fixed;
-  top: 0;
-  width: 100%;
+@import 'modal';
 
-  .logo {
-    background-image: url('../images/_isoj-logo.png');
-    width: 92px;
-  }
-
-  #subscribe {
-    color: #323232;
-  }
+.no-scroll {
+  overflow: hidden;
 }
 
-#content-header {
-  margin-top: 52px;
-}
-
-.more,
-.interactive-footer {
+.more {
   display: none;
 }
 

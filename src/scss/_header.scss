@@ -1,213 +1,628 @@
 @import "_variables.scss";
 @import "_mixins.scss";
 
-
-.bg-black {
-  min-height: 51px;
-  padding: 6px 12px;
-  background-color: rgb(50,50,50);
-  color: #ffffff;
-  position: relative;
-  z-index: 30;
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.site-header {
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  height: 74px;
+  min-height: 70px;
 
-.logo {
-  background-image: url('//interactives.dallasnews.com/common/templates/v1.0/images/_dmn_logo.svg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: left center;
-  opacity: .85;
-  display: block;
-  height: 40px;
-  width: 155.4px;
-  float: left;
-  cursor: pointer;
-  @include transition(all, .25s, ease-out);
-  &:hover {
-      opacity: 1;
+  & * {
+    box-sizing: border-box;
+    line-height: 24px;
+  }
+
+  &::before {
+    clear: both;
+    content: '';
+    display: table;
+    table-layout: fixed;
+  }
+
+  &::after {
+    content: '';
+    display: table;
+    table-layout: fixed;
+  }
+
+  img {
+    border: 0 none;
+    height: auto;
+    max-width: 100%;
   }
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  border: 0;
+.site-branding {
+  float: left;
+  margin: 10px 0 0 10px;
+  max-width: 120px;
+  z-index: 10;
 }
 
-#header-nav {
-    float: left;
-    margin-left: 20px;
+.site-logo {
+  height: auto;
+  width: 100%;
+
+  a {
+    outline: 0;
+  }
 }
 
-.header-group {
-    float: left;
-    position: relative;
-    &:last-of-type {
-        margin-right: 0;
-    }
+
+/*--------------------------------------------------------------
+## Navigation
+--------------------------------------------------------------*/
+.main-navigation {
+  display: block;
+  width: 100%;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+
     ul {
-        position: absolute;
-        top: calc(100% + 6px);
-        background-color: #323232;
-        min-width: 190px;
-        font-family: $sans;
-        font-weight: bold;
-        text-transform: uppercase;
-        display: none;
-        padding-top: 14px;
-        &.open-list {
-            display: block;
-        }
-        li {
-            @include type(1.4rem, 1.8rem, 1.2rem);
-            padding-top: 6px;
-            margin: 0 20px 1.2rem;
-            a {
-                text-decoration: none;
-                color: white;
-                &:visited {
-                    color: white;
-                }
-                &:hover {
-                    color: $dmnblue;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
-    button {
-        position: relative;
-        top: 1px;
-        margin: 0 20px 0 20px;
-        background-color: rgba(255,255,255,0);
-        color: white;
-        font-family: $sans;
-        border: none;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 14px;
-        line-height: 39px;
-        float: left;
-        padding: 0 18px 0 0;
-        &:before {
-            content: "";
-            position: absolute;
-            display: block;
-            width: 0px;
-            height: 0px;
-            border-left: 6px solid transparent;
-	        border-right: 6px solid transparent;
-	        border-top: 6px solid white;
-            right: 0;
-            top: 16px;
-            @include transition(all, .15s, ease-out);
-        }
-        &:after {
-            position: absolute;
-            content: "";
-            display: block;
-            width: 0%;
-            background-color: $dmnblue;
-            height: 5px;
-            @include transition(all, .25s, ease-out);
-        }
-        &:hover {
-            cursor: pointer;
-            &:after {
-                width: 100%;
-            }
-        }
-        &:focus{
-            outline: none;
-        }
-        &.open-button {
-            color: $dmnblue;
-            &:before {
-                transform: rotate(-180deg);
-                border-top: 6px solid $dmnblue;
-            }
-            &:after {
-                width: 100%;
-            }
-        }
-    }
-}
+      background: #FFFFFF;
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      float: left;
+      left: -999em;
+      position: absolute;
+      top: 74px;
+      z-index: 99999;
 
-@media (max-width: 510px) {
-    #header-nav {
-        float: right;
-    }
-    .header-group {
-        &:first-of-type {
-            button {
-                margin-right: 10px;
-            }
-        }
-        button {
-            margin: 0 6px;
-        }
-        ul {
-            right: 0;
-        }
-    }
-    #header-account {
-        button {
-            text-indent: -9999px;
-            background-image: url("//interactives.dallasnews.com/common/templates/v1.0/images/identity.svg");
-            background-repeat: no-repeat;
-            background-size: 18px;
-            background-position: left center;
-            width: 30px;
-            padding: 0 0;
-            margin-right: 0;
-            width: 20px;
-            &:before, &:after {
-                display: none;
-            }
-        }
-    }
-}
+      ul {
+        background: #FFFFFF;
+        left: -999em;
+        top: 0;
+      }
 
-.logged-in {
-    display: none;
-}
+      li {
+        line-height: 24px;
+        &:hover > ul,
+        &.focus > ul {
+          left: 100%;
+        }
+      }
 
-.subscribed .logged-in {
+      a {
+        width: 200px;
+      }
+
+      :hover > a,
+      .focus > a {}
+
+      a:hover,
+      a.focus {}
+    }
+
+    li:hover > ul,
+    li.focus > ul {
+      left: auto;
+    }
+  }
+
+  li {
+    position: relative;
+
+    &:hover > a,
+    &.focus > a {
+      background: #186779;
+      color: #FFFFFF;
+    }
+  }
+
+  a {
+    color: #333333;
     display: block;
+    font-weight: bold;
+    outline: 0;
+    padding: 25px 10px;
+    text-decoration: none;
+    transition: background 300ms, color 300ms;
+  }
+
+  a:visited {
+    color: #333333;
+  }
+
+  .current_page_item > a,
+  .current-menu-item > a,
+  .current_page_ancestor > a,
+  .current-menu-ancestor > a {
+    background: #186779;
+    color: #FFFFFF;
+  }
 }
 
-.subscribed .logged-out {
-    display: none;
-}
-
-.subscribed #subscribe {
+.menu-main-menu-container {
+  clear: both;
   display: none;
+
+  -webkit-transition: .25s ease-in-out;
+     -moz-transition: .25s ease-in-out;
+       -o-transition: .25s ease-in-out;
+          transition: .25s ease-in-out;
 }
 
-#subscribe {
-    color: white;
-    float: right;
-    font-family: $sans;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    line-height: 39px;
-    @include transition(all, .15s, ease-out);
+.main-navigation.toggled .menu-main-menu-container {
+  background: #FFFFFF;
+  display: block;
+  position: relative;
+  z-index: 99;
+}
+
+// Menu toggle button
+.menu-toggle,
+.menu-toggle:hover,
+.menu-toggle:active,
+.menu-toggle:focus {
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: pointer;
+  display: block;
+  font-size: 12px;
+  height: 30px;
+  line-height: 16px;
+  margin: 25px 0 0 0;
+  outline: none;
+  overflow: visible;
+  padding: 0;
+  position: absolute;
+  right: 17px;
+  -webkit-appearance: button;
+  width: 30px;
+}
+
+.menu-toggle .icon-bar+.icon-bar {
+  margin-top: 0;
+}
+
+.menu-toggle span {
+  background-color: #186779;
+  border-radius: 1px;
+  display: block;
+  height: 4px;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  width: 28px;
+
+  -webkit-transition: .25s ease-in-out;
+     -moz-transition: .25s ease-in-out;
+       -o-transition: .25s ease-in-out;
+          transition: .25s ease-in-out;
+
+  -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+       -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.menu-toggle span:nth-child(1) { top: 0; }
+.menu-toggle span:nth-child(2) { top: 8px; }
+.menu-toggle span:nth-child(3) { top: 16px; }
+
+.main-navigation.toggled .menu-toggle span {
+  top: 8px;
+}
+
+.main-navigation.toggled .menu-toggle span:nth-child(1) {
+  -webkit-transform: rotate(135deg);
+     -moz-transform: rotate(135deg);
+       -o-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.main-navigation.toggled .menu-toggle span:nth-child(2) {
+  opacity: 0;
+
+  -webkit-transform: scale(0);
+     -moz-transform: scale(0);
+       -o-transform: scale(0);
+          transform: scale(0);
+}
+
+.main-navigation.toggled .menu-toggle span:nth-child(3) {
+    -webkit-transform: rotate(-135deg);
+       -moz-transform: rotate(-135deg);
+         -o-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+}
+
+/* Small menu */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+// Header widget
+#more-info-trigger {
+  display: none;
+  font-weight: bold;
+  margin: 0;
+  outline: 0;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+
+  .widget {
+    list-style: none;
+    margin: 0;
+  }
+
+  a {
+    color: #333333;
+    // transition: color 300ms;
+    display: block;
+    padding: 25px 10px;
+    // position: absolute;
+    text-decoration: none;
+    transition: background 300ms, color 300ms;
+  }
+
+  &:hover {
+    a {
+      background: #186779;
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+  }
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+
+  &:focus {
+    background-color: #F1F1F1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759B;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    margin-bottom: 21px;
+    margin-top: 14px;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+  }
+
+  &.site-title,
+  &.site-description {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+  }
+
+  a {
+    color: #186779;
+    outline: 0;
+    text-decoration: none;
+
+    a:visited {
+      color: #186779;
+    }
+
+    &:active,
+    &:focus,
     &:hover {
-        text-decoration: none;
-        color: darken(white, 10);
+      color: #14A1AF;
+    }
+
+    &:active,
+    &:hover {
+      outline: 0;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+    .menu-toggle {
+      display: none;
+    }
+    .menu-main-menu-container {
+      clear: none;
+      display: block;
+      margin-left: 150px;
+    }
+    .main-navigation ul {
+      display: block;
+    }
+    .main-navigation li {
+      float: left;
+    }
+    #more-info-trigger {
+      display: block;
     }
 }
 
-@media (max-width: 640px) {
-    #subscribe {
-        display: none;
-    }
-}
+
+// .site-header {
+//   min-height: 70px;
+//
+//   &::before {
+//     content: '';
+//     display: table;
+//     table-layout: fixed;
+//   }
+//
+//   &::after {
+//     clear: both;
+//     content: '';
+//     display: table;
+//     table-layout: fixed;
+//   }
+//
+//   .site-branding {
+//     float: left;
+//     margin: 10px 0 0 10px;
+//     max-width: 120px;
+//     z-index: 10;
+//
+//     .site-logo {
+//       height: auto;
+//       width: 100%;
+//
+//       a {
+//         outline: 0;
+//       }
+//     }
+//   }
+//
+//   .screen-reader-text {
+//     clip: rect(1px, 1px, 1px, 1px);
+//     height: 1px;
+//     overflow: hidden;
+//     position: absolute !important;
+//     width: 1px;
+//   }
+//
+//   .site-title,
+//   .site-description {
+//     clip: rect(1px, 1px, 1px, 1px);
+//     position: absolute;
+//   }
+//
+//   .main-navigation {
+//     display: block;
+//     width: 100%;
+//   }
+//
+//   img {
+//     border: 0;
+//     height: auto;
+//     max-width: 100%;
+//   }
+// }
+//
+//
+// .bg-black {
+//   min-height: 51px;
+//   padding: 6px 12px;
+//   background-color: #FFFFFF;
+//   color: #ffffff;
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   z-index: 30;
+//   box-sizing: border-box;
+//   -webkit-box-sizing: border-box;
+//   -moz-box-sizing: border-box;
+//   box-shadow: inset -1px -1px 19px -5px #777, 1px 1px 10px #777;
+// }
+//
+// .logo {
+//   background-repeat: no-repeat;
+//   background-size: 100% 100%;
+//   background-position: left center;
+//   opacity: .85;
+//   display: block;
+//   height: 40px;
+//   float: left;
+//   cursor: pointer;
+//   background-image: url('../images/_isoj-logo.png');
+//   width: 92px;
+//
+//   @include transition(all, .25s, ease-out);
+//   &:hover {
+//       opacity: 1;
+//   }
+// }
+//
+// .sr-only {
+//   position: absolute;
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   padding: 0;
+//   overflow: hidden;
+//   clip: rect(0,0,0,0);
+//   border: 0;
+// }
+//
+// #header-nav {
+//     float: left;
+//     margin-left: 20px;
+// }
+//
+// .header-group {
+//     float: left;
+//     position: relative;
+//     &:last-of-type {
+//         margin-right: 0;
+//     }
+//     ul {
+//         position: absolute;
+//         top: calc(100% + 6px);
+//         background-color: #323232;
+//         min-width: 190px;
+//         font-family: $sans;
+//         font-weight: bold;
+//         text-transform: uppercase;
+//         display: none;
+//         padding-top: 14px;
+//         &.open-list {
+//             display: block;
+//         }
+//         li {
+//             @include type(1.4rem, 1.8rem, 1.2rem);
+//             padding-top: 6px;
+//             margin: 0 20px 1.2rem;
+//             a {
+//                 text-decoration: none;
+//                 color: white;
+//                 &:visited {
+//                     color: white;
+//                 }
+//                 &:hover {
+//                     color: $dmnblue;
+//                     cursor: pointer;
+//                 }
+//             }
+//         }
+//     }
+//     button {
+//         position: relative;
+//         top: 1px;
+//         margin: 0 20px 0 20px;
+//         background-color: rgba(255,255,255,0);
+//         color: white;
+//         font-family: $sans;
+//         border: none;
+//         font-weight: bold;
+//         text-transform: uppercase;
+//         font-size: 14px;
+//         line-height: 39px;
+//         float: left;
+//         padding: 0 18px 0 0;
+//         &:before {
+//             content: "";
+//             position: absolute;
+//             display: block;
+//             width: 0px;
+//             height: 0px;
+//             border-left: 6px solid transparent;
+// 	        border-right: 6px solid transparent;
+// 	        border-top: 6px solid white;
+//             right: 0;
+//             top: 16px;
+//             @include transition(all, .15s, ease-out);
+//         }
+//         &:after {
+//             position: absolute;
+//             content: "";
+//             display: block;
+//             width: 0%;
+//             background-color: $dmnblue;
+//             height: 5px;
+//             @include transition(all, .25s, ease-out);
+//         }
+//         &:hover {
+//             cursor: pointer;
+//             &:after {
+//                 width: 100%;
+//             }
+//         }
+//         &:focus{
+//             outline: none;
+//         }
+//         &.open-button {
+//             color: $dmnblue;
+//             &:before {
+//                 transform: rotate(-180deg);
+//                 border-top: 6px solid $dmnblue;
+//             }
+//             &:after {
+//                 width: 100%;
+//             }
+//         }
+//     }
+// }
+//
+// @media (max-width: 510px) {
+//     #header-nav {
+//         float: right;
+//     }
+//     .header-group {
+//         &:first-of-type {
+//             button {
+//                 margin-right: 10px;
+//             }
+//         }
+//         button {
+//             margin: 0 6px;
+//         }
+//         ul {
+//             right: 0;
+//         }
+//     }
+//     #header-account {
+//         button {
+//             text-indent: -9999px;
+//             background-image: url("//interactives.dallasnews.com/common/templates/v1.0/images/identity.svg");
+//             background-repeat: no-repeat;
+//             background-size: 18px;
+//             background-position: left center;
+//             width: 30px;
+//             padding: 0 0;
+//             margin-right: 0;
+//             width: 20px;
+//             &:before, &:after {
+//                 display: none;
+//             }
+//         }
+//     }
+// }
+//
+// .logged-in {
+//     display: none;
+// }
+//
+// .subscribed .logged-in {
+//     display: block;
+// }
+//
+// .subscribed .logged-out {
+//     display: none;
+// }
+//
+// .subscribed #subscribe {
+//   display: none;
+// }
+//
+// #subscribe {
+//     color: #323232;
+//     float: right;
+//     font-family: $sans;
+//     font-size: 1.1rem;
+//     text-transform: uppercase;
+//     line-height: 39px;
+//     @include transition(all, .15s, ease-out);
+//     &:hover {
+//         text-decoration: none;
+//         color: darken(white, 10);
+//     }
+// }
+//
+// @media (max-width: 640px) {
+//     #subscribe {
+//         display: none;
+//     }
+// }

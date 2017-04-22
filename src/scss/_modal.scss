@@ -1,0 +1,117 @@
+#more-info-modal {
+  bottom: 0;
+  left: 0;
+  overflow-y: scroll;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  &::before {
+    background: rgba(0,0,0,0);
+    content: '';
+    display: block;
+    height: 100vh;
+    transition: background 300ms;
+    width: 100vw;
+  }
+
+  .modal-box {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &.shown {
+    pointer-events: auto;
+
+    &::before {
+      background: rgba(0,0,0,0.55);
+      content: '';
+      cursor: pointer;
+      display: block;
+      height: 100vh;
+      position: fixed;
+      width: 100vw;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+    }
+
+    .modal-box {
+      background-color: #f1f1f1;
+      border-radius: 3px;
+      box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.35);
+      color: #21759B;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 14px;
+      left: 0;
+      margin: 55px auto;
+      min-width: 320px;
+      opacity: 1;
+      padding: 15px 23px 14px;
+      position: absolute;
+      right: 0;
+      transition: opacity 300ms;
+      top: 0;
+      visibility: visible;
+      width: 50%;
+
+      .modal-title {
+        border-bottom: 2px solid darken(#21759B, 20);
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 38px;
+        margin: 0 -4px 20px;
+        padding-bottom: 3px;
+        text-indent: 5px;
+      }
+
+      .modal-chatter {
+        p {
+          color: #212121;
+          font-size: 14px;
+          line-height: 21px;
+          margin-bottom: 21px;
+        }
+      }
+
+      .exit-trigger {
+        background: #4C4C4C;
+        border: 2px solid #000000;
+        border-radius: 14px;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-size: 23px;
+        font-weight: bold;
+        height: 28px;
+        line-height: 24px;
+        position: absolute;
+        right: -10px;
+        text-align: center;
+        top: -10px;
+        transition: background 300ms, border 300ms;
+        width: 28px;
+
+        -webkit-touch-callout: none;
+
+        -webkit-user-select: none;
+         -khtml-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+
+        &:hover {
+          background-color: lighten(#4C4C4C, 10%);
+          border-color: lighten(#000000, 20%);
+        }
+
+        &:active {
+          background-color: #AC4136;
+          border-color: darken(#AC4136, 20%);
+        }
+      }
+    }
+  }
+}
