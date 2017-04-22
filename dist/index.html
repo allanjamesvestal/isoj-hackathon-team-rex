@@ -44,7 +44,7 @@
         <link rel="stylesheet" type="text/css" href="//interactives.dallasnews.com/common/templates/v1.0/css/print.css" media="print"/>
         <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6922714/7642152/css/fonts.css" />
         <link href='//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
 
         <link rel="stylesheet" type="text/css" href="css/styles-bundle.css" />
 
@@ -126,13 +126,48 @@ googletag.enableServices();
         <!-- end Google Tag Manager DMN -->
         <!-- <script type="text/javascript" src="https://sres.dallasnews.com/resources/cobrand/js/blogs/parselyDynamicTracking.js"></script>-->
 
-        <header class="bg-black clearfix">
+        <header id="masthead" class="site-header" role="banner">
+            <div class="site-branding">
+                <!-- Custom logo check -->
+                <div class="site-logo">
+                    <a href="https://www.isoj.org/" class="custom-logo-link" rel="home" itemprop="url">
+                        <img width="380" height="165" src="images/_isoj-logo.png" class="custom-logo" alt="ISOJ" >
+                    </a>
+                </div>
+
+                <!-- Site title and description for accessibility and SEO -->
+                <p class="site-title screen-reader-text"><a href="https://www.isoj.org/" rel="home">International Symposium on Online Journalism</a></p>
+                <p class="site-description screen-reader-text">A program of the Knight Center for Journalism in the Americas at the University of Texas at Austin</p>
+            </div><!-- .site-branding -->
+
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="menu-main-menu-container">
+                    <ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
+                        <li id="menu-item-1813" class="menu-item menu-item-type-post_type menu-item-object-symposium menu-item-1813"><a href="https://www.isoj.org/symposia/2017/">2017</a></li>
+                        <li id="menu-item-1795" class="menu-item menu-item-type-post_type menu-item-object-symposium menu-item-1795"><a href="https://www.isoj.org/symposia/2016/">2016</a></li>
+                        <li id="menu-item-1812" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1812"><a href="https://www.isoj.org/symposia/">All Symposia</a></li>
+                        <li id="menu-item-1762" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1762"><a href="https://www.isoj.org/news/">News</a></li>
+                        <li id="menu-item-1810" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1810"><a href="https://www.isoj.org/research/">Research</a></li>
+                        <li id="menu-item-1811" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1811"><a href="https://www.isoj.org/about/">About</a></li>
+                    </ul>
+                </div>
+            </nav><!-- #site-navigation -->
+            <div id="more-info-trigger"><a href="#">More information</a></div>
+        </header>
+
+        <!-- <header class="bg-black clearfix">
             <a class="logo" href="https://www.dallasnews.com" id="top">
                 <span class="sr-only">International Symposium on Online Journalism</span>
             </a>
             <div id="header-nav"></div>
             <a id="subscribe" href="#">More information</a>
-        </header>
+        </header> -->
 
         <article id="content">
             
@@ -305,7 +340,7 @@ Many articles you read are explore how national issues play out in our community
 
 They do very good and free research. Sometimes we figure out stories to match to some of their surveys. Other times we just try to look for a survey to support our story. This story is a Case B situation.
 
-To learn more about them go to: [http://www.pewresearch.org](https://www.google.com/url?q=http://www.pewresearch.org&sa=D&ust=1492729587067000&usg=AFQjCNEPYHWAiRLfqskzUkuBamo_r8iGzw)</p>
+To learn more about them go to: [http://www.pewresearch.org](https://www.google.com/url?q=http://www.pewresearch.org&sa=D&ust=1492823901541000&usg=AFQjCNGSL1Sg21Xc2CAOXb3gh9sY89yIZA)</p>
   </div>
 </div>
 
@@ -584,6 +619,26 @@ To learn more about them go to: [http://www.pewresearch.org](https://www.google.
                 <p class="copyright footer-credit">Website by <em><a href="https://dallasnews.com/" target="_blank">The Dallas Morning News</a></em></p>
             </div>
         </footer>
+
+        <aside id="more-info-modal">
+            <div class="modal-box">
+                <div class="modal-title">About this page</div>
+                <div class="modal-chatter">
+                
+  
+    <p>This is a demonstration page created by a team at the Hackastory hackathon at ISOJ 2017. The page primarily demonstrates the team&#39;s concept for increasing transparency in the news reporting process. All text used on this page is intended solely for the purposes of demonstrating this concept.</p>
+  
+    <p>This concept was voted to have the &quot;Best potential&quot; by the members of all the teams that participated in this hackathon.</p>
+  
+    <p>More information on this project may be added here in the coming days. Otherwise, reach out to the team members who created it -- our names and email addresses are listed at the very bottom of the page.</p>
+  
+    <p><em>Last updated by Allan James Vestal on April 21, 2017.</em></p>
+  
+
+                </div>
+                <div class="exit-trigger">&times;</div>
+            </div>
+        </aside>
 
         <script type="text/javascript" src="js/scripts-bundle.js"></script>
 
