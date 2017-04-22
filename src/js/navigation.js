@@ -76,7 +76,10 @@ export default () => {
     }
   });
 
-  $('#more-info-trigger').on('click', toggleModal);
+  $('#more-info-trigger').on('click', (e) => {
+    e.preventDefault();
+    toggleModal();
+  });
 
   $('#more-info-modal').on('click', (e) => {
     if ($(e.target).hasClass('shown')) { toggleModal(); }
