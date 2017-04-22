@@ -1,8 +1,16 @@
-// import $ from 'jquery';
+import $ from 'jquery';
+
+
 // import './furniture';
+import bindNavigationEvents from './navigation';
 
-// Copyright
-var d = new Date();
-var year = d.getFullYear();
 
-$('.copyright').text(year);
+$(document).ready(() => {
+  // Correct copyright year.
+  const d = new Date();
+  const year = d.getFullYear();
+  $('.copyright-year').text(year);
+
+  // Navigation click event binding.
+  bindNavigationEvents();
+});
