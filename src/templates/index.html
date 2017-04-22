@@ -92,6 +92,15 @@ googletag.enableServices();
 {%endblock%}
 
 
+{% block modal_title %}{{ copy.modalTitle }}{% endblock %}
+
+{% block modal_contents %}
+  {% for bodyGraph in copy.modalBody %}
+    <p>{{ bodyGraph|markdown|safe }}</p>
+  {% endfor %}
+{% endblock %}
+
+
 {%block content%}
 <script type="text/javascript">
   function openNav(id) {
